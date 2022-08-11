@@ -1,8 +1,35 @@
-import Head from 'next/head'
-import { Fragment } from 'react'
-import Hero from '../components/home-page/hero'
+import Head from "next/head";
+import { Fragment } from "react";
+import FeaturesPosts from "../components/home-page/features-posts";
+import Hero from "../components/home-page/hero";
 
 export default function HomePage() {
+  const DUMMY_POSTS = [
+    {
+      title: "Primeiro Post Do Blog",
+      image: "getting-started-nextjs.png",
+      excerpt: `Desenvolvendo uma aplicação em NextJs usando React fazendo o build em SSR, Para a estilização... 
+      eu uso Sass para facilitar na organização do site, os arquivos ficam separados em modulos.`,
+      date:"2022-08-11",
+      slug: "Initial",
+    },
+    {
+      title: "Segundo Post Do Blog",
+      image: "getting-started-nextjs.png",
+      excerpt: `Desenvolvendo uma aplicação em NextJs usando React fazendo o build em SSR, Para a estilização... 
+      eu uso Sass para facilitar na organização do site, os arquivos ficam separados em modulos.`,
+      date:"2022-08-11",
+      slug: "Initial2",
+    },
+    {
+      title: "Terceiro Post Do Blog",
+      image: "getting-started-nextjs.png",
+      excerpt: `Desenvolvendo uma aplicação em NextJs usando React fazendo o build em SSR, Para a estilização... 
+      eu uso Sass para facilitar na organização do site, os arquivos ficam separados em modulos.`,
+      date:"2022-08-11",
+      slug: "Initial3",
+    }
+  ];
   return (
     <Fragment>
       <Head>
@@ -11,8 +38,7 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      {/* <FeaturedPosts /> */}
-
+      <FeaturesPosts posts={DUMMY_POSTS} />
     </Fragment>
-  )
+  );
 }
