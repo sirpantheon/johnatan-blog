@@ -3,14 +3,16 @@ import Link from "next/link";
 import styles from "./posts-item.module.scss";
 
 export default function PostsItem(props) {
+
   const { title, image, excerpt, date, slug } = props.post;
+  
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
     year: "numeric",
   });
   const imagePath = `/image/posts/${slug}/${image}`;
-  const linkPath = `/post/${slug}`;
+  const linkPath = `/posts/${slug}`;
 
   return (
     <li className={styles.post}>
