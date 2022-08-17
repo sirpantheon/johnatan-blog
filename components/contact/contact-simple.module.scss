@@ -1,0 +1,26 @@
+.contactsimple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    background-color: var(--color-grey-50);
+    width: 90%;
+    max-width: 70vw;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-primary-200);
+    font-size: var(--size-5);
+
+    h1{
+        font-size: 3rem;
+    }
+}
+.contatos{
+    padding: var(--size-2);
+}
+
