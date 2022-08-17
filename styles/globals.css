@@ -20,6 +20,10 @@ body {
   --color-primary-50: #c8b3ce;
   --color-primary-100: #a07aaa;
   --color-primary-200: #66007a;
+  --color-primary-111: #E1BEE7;
+  --color-primary-222: #A600C7;
+  --color-primary-333: #510061;
+  --color-primary-444: #31003B;
   --color-primary-300: #843897;
   --color-primary-400: #732392;
   --color-primary-500: #5a097a;
@@ -48,8 +52,8 @@ body {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(149, 149, 149, 1) 100%
+    #FFF 0%,
+    var(--color-primary-111) 50%
   );
   color: #252525;
   font-family: "Roboto", sans-serif;
