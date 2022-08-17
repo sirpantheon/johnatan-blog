@@ -1,23 +1,25 @@
 ---
-title: Mastering JavaScript
-excerpt: JavaScript is the most important programming language for web development. You probably don't know it well enough!
+title: Primeiros Passos em Next.js e TypeScript
+excerpt: Esta e uma das minhas primeiras experiencia utilizando TypeScript para desenvolver em Next.js
 image: mastering-js-thumb.png
-isFeatured: false
-date: '2021-10-30'
+isFeatured: true
+date: '2022-06-30'
 ---
 
-JavaScript powers the web - it's **the** most important programming language you need to know as a web developer.
+## Esta e uma das minhas primeiras experiencia utilizando TypeScript para desenvolver em Next.js
 
-For example, you should understand code like this:
+  Foi essa aplicação que me mostrou o quão facil e desenvolver em Next.js, o sistema de rotas do frameworks foi muito simples de implementar...
 
-```js
-const basics = 'Okay, that should not be too difficult actually';
+  para implementar o sistema de rotas e só importar e sair usando...
 
-function printBasics() {
-  console.log(basics):
-}
+   ~~~Next.js
+    import Link from "next/link";
+   ~~~
+   
+  ### CSS
+  para a estilização eu ultilizei [styled-components](https://styled-components.com/), ficou muito mais facil organizar o **Sass** com essa biblioteca.
 
-printBasics();
-```
+  ### Deploy
+  esta aplicação esta hospedada na **Vercel**, recomendo a todos que estejam estudando Next.js fazer o deploy na **Vercel** Além de facil e de graça. 
 
-Learn more about it [here](https://academind.com).
+[Ir Para a Aplicação](https://index-jp.vercel.app/).
