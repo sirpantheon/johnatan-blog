@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+    height: 100vh;    
 }
 .container{
     background-color: var(--color-grey-50);
@@ -14,13 +13,28 @@
     align-items: center;
     flex-direction: column;
     color: var(--color-primary-200);
-    font-size: var(--size-5);
+    font-size: var(--size-6);
 
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 .contatos{
     padding: var(--size-2);
+}
+.continterno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        margin: 1.5rem 1rem;
+    }
 }
 
