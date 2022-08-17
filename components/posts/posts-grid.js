@@ -1,5 +1,5 @@
 import PostItem from './post-item';
-import classes from './posts-grid.module.css';
+import classes from './posts-grid.module.scss';
 
 function PostsGrid(props) {
   const { posts } = props;
